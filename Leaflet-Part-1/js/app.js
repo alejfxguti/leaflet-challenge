@@ -10,6 +10,16 @@ fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    // Extract today's date for the title
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth() + 1; // Note: Months are zero-based, so add 1
+    const day = today.getDate();
+
+    // Set the title in the HTML element
+    const titleElement = document.getElementById('visualization-title');
+    titleElement.textContent = `All earthquakes on ${year}-${month}-${day}`;
+
     // Loop through the earthquake features
     data.features.forEach(feature => {
       // Get the magnitude and depth of the earthquake
