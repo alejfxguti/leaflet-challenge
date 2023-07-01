@@ -50,7 +50,7 @@ fetch('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
     });
 
     // Create a legend
-    const legend = L.control({ position: 'bottomright' });
+    const legend = L.control({ position: 'topright' });
     legend.onAdd = function (map) {
       const div = L.DomUtil.create('div', 'info legend');
       const depths = [0, 10, 30, 50, 70, 90];
