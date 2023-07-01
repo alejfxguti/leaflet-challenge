@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.info.legend {
+  background: #fff;
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info.legend i {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.8;
+}
+
+.info.legend div {
+  display: flex;
+  align-items: center;
+}
+
+.depth-legend {
+  background: #FF0000;
+}
+
+.info.legend div span {
+  padding-left: 8px;
+}
