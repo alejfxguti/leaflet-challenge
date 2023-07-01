@@ -1,6 +1,8 @@
 # leaflet-challenge
 
 This project is a web-based earthquake visualization tool that plots earthquake data on a map using Leaflet. It displays earthquake markers with varying sizes based on their magnitude and colors based on their depth.
+![Global Daily Earthquakes](https://github.com/alejfxguti/leaflet-challenge/blob/main/Leaflet-Part-1/Images/Global_Daily_Equakes.png)
+
 
 ## Getting Started
 
